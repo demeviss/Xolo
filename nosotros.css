@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2? family= Rubik:wght@300;400 & display=swap');
+
+:root{
+   --transition: all 300ms ease-in-out; 
+   --dark-color: #332e29;
+   --ligth-color: #fff;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 20%;
+    
+}
+video{
+    width: 0%;
+}
+
+h1{
+    text-align: center;
+    color: #457b9d;
+ }
+ h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+ }
+
+
+div.contenedor{
+   padding-top: 70px;
+    width: 80% ;
+    height: 20%;
+    overflow: auto;
+    margin: auto;
+    text-align: justify;
+   
+    
+   
+}
+div .parrafos_dos{
+   display: inline-block;
+   padding-top: 15px;
+    
+}
+
+.imagen{
+    width: 510px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px 20px 20px 20px ;
+    
+}
+@media( max-width:1024px){
+    .imagen{
+        width: 650px;
+       
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px 20px 20px 20px ;
+        
+    }
+}
+@media( max-width:600px){
+    h2{
+        font-family: 'Rubik', sans-serif;
+        font-size: 25px;
+     }
+    
+    div.contenedor{
+       padding-top: 70px;
+        width: 80% ;
+        height: 20%;
+        overflow: auto;
+        margin: auto;
+        text-align: justify;
+        
+       
+    }
+    div .parrafos_dos{
+        column-count:1;
+        
+        
+    }
+    .imagen{
+        width: 400px;
+       
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px 20px 20px 20px ;
+        
+    }
+    .titulo_dos{
+        font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    }
+
+}

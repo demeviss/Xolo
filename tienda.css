@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2? family= Rubik:wght@300;400 & display=swap');
+
+:root{
+   --transition: all 300ms ease-in-out; 
+   --dark-color: #332e29;
+   --ligth-color: #fff;
+
+}
+*::after,
+*::before,
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Rubik', sans-serif;
+    color: #FF3D8A ;
+}
+.container-icon{
+ padding-left: 1150px;
+}
+.icon-cart{
+    width: 40px;
+    height: 40px;
+  
+    
+}
+img{
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item{
+    border-radius: 10px;
+}
+.item:hover{
+    box-shadow: 0 10px 20 px rgba(0, 0, 0, 0.20) ;
+}
+
+
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0 ;
+    transition: all .5s;
+   
+}
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+     }
+     .price{
+        font-size: 18px;
+        font-weight: 900;
+     }
+ .info-product button{
+        border: none;
+        background: none;
+        background-color: black;
+       color: rgb(255, 255, 255);
+        padding: 15px 0px;
+        cursor: pointer;
+     }
+ .info-product button:hover{
+        background-color: #FF3D8A;
+          color: rgb(0, 0, 0);
+        
+     }
+
+@media( max-width:1024px){
+    .container-icon{
+        padding-left: 750px;
+       }
+       
+}
+@media( max-width:600px){
+    .checkbtn{
+
+        display: block;
+    }
+    ul{
+        padding-right: 40px;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        color: rgb(255, 255, 255);
+        font-size:20px ;
+        padding: 7px 13px;
+        border-radius:3px ;
+        text-transform: uppercase;
+        font-family: 'Rubik', sans-serif;
+    }
+    li a.enlace, li a:hover{
+        color:#FF3D8A;
+        transition: .5s ;
+    }
+    .active{
+        color:#FF3D8A;
+        cursor: pointer;
+    }
+    .active:hover{
+        color: rgb(255, 255, 255);
+        transition: .5s;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        
+    }
+    section{
+        padding-left: 260px;
+        position: fixed;
+        height: calc(100vh-80px);
+        
+    }
+    .container-icon{
+        padding-left: 400px;
+       }
+       .container-items{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2? family= Rubik:wght@300;400 & display=swap');
+:root{
+    --transition: all 300ms ease-in-out; 
+    --dark-color: #332e29;
+    --ligth-color: #fff;
+ 
+ }
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+.formulario{
+padding-top: 100px;
+ padding-left: 200px;
+
+}
+h2{
+ color: #FF3D8A;
+ font-size: 28px;
+
+ 
+}
+.container{
+   
+    max-width: 700px;
+    width: 100%;
+    background: none;
+    padding: 65px;
+    
+ 
+  
+}
+.formulario{
+padding-top: 10px;
+font-size: 1.5rem;
+color: #333;
+font-weight: 400;
+
+}
+.container .form{
+  margin-top: 1px;  
+}
+.form .input-box{
+ width: 100%;
+ margin-top: 10px;
+}
+.input-box label{
+  color: #333;
+}
+.form .input-box input{
+  
+   height: 60px; 
+   width: 70%;
+   outline: none;
+   color: #707070;
+   margin-top: 8px;
+   font-size: 16px;
+   border: 1px solid #ddd ;
+   border-radius: 6px;
+   padding:  0 5px;
+}
+.contenedor_boton{
+    padding-top: 0px;
+    padding-left: 238px;
+}
+button{
+ height: 50px;
+ width: 50%;
+ background-color: #FF3D8A;
+ border: none;
+ border-radius: 6px;
+ font-family: 'Rubik', sans-serif;
+ font-size: 20px;
+ color: #ddd;
+ padding: 15px;
+ padding-left: 10px;
+}
+
+@media( max-width:1024px){
+    .formulario{
+        padding-top: 150px;
+         padding-left: 150px;
+        }
+        .contenedor_boton{
+            padding-top: 40px;
+            padding-left: 120px;
+        }     
+
+}
+@media( max-width:600px){
+    .formulario{
+        padding-top: 30px;
+         padding-left: 50px;
+         
+        }
+        .form .input-box{
+            width: 125%;
+            margin-top: 10px;
+           }
+        .contenedor_boton{
+            padding-top: 0px;
+            padding-left: 60px;
+        }     
+        button{
+            height: 50px;
+            width: 70%;
+            background-color: #FF3D8A;
+            border: none;
+            border-radius: 6px;
+            font-family: 'Rubik', sans-serif;
+            font-size: 20px;
+            color: #ddd;
+            padding: 15px;
+            padding-left: 10px;
+           }
+
+}

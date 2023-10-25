@@ -1,0 +1,26 @@
+{
+    "name": "XOLO PAGE",
+    "short_name": "Xolo Diseño",
+    "start_url" : ".",
+    "background_color": "#fff",
+    "theme_color": " #FF3D8A",
+    "orientation" :"portrait",
+    "display": "standalone",
+    "icons":[
+        {
+            "src":"/logo_xoco/maskable_icon.png",
+            "sizes":"512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+            
+        }
+
+        
+   
+
+    ]
+
+
+
+
+}
